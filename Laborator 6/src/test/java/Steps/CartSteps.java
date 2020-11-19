@@ -29,8 +29,6 @@ public class CartSteps {
     @Then("Selected item is added to the shopping cart")
     public void selectedItemIsAddedToTheShoppingCart() {
         driver.findElement(By.className("minicart-showing")).isDisplayed();
-
-
     }
 }
 

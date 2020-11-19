@@ -17,10 +17,10 @@ public class LoginSteps {
         driver.findElement(By.cssSelector("#home>div>ul>li:nth-child(1)>a")).click();
     }
 
-    @When("User enter name and email")
-    public void userEnterNameAndEmail(String username, String email) {
+    @When("^User enter (.*) and (.*)$")
+    public void userEnterNameAndEmail(String name, String email) {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#myModal>div>div>div.modal-body.modal-body-sub_agile>div.col-md-8.modal_body_left.modal_body_left1>form>div.styled-input.agile-styled-input-top>input[type=text]")).sendKeys(username);
+        driver.findElement(By.cssSelector("#myModal>div>div>div.modal-body.modal-body-sub_agile>div.col-md-8.modal_body_left.modal_body_left1>form>div.styled-input.agile-styled-input-top>input[type=text]")).sendKeys(name);
         driver.findElement(By.cssSelector("#myModal>div>div>div.modal-body.modal-body-sub_agile>div.col-md-8.modal_body_left.modal_body_left1>form>div:nth-child(2)>input[type=email]")).sendKeys(email);
     }
 

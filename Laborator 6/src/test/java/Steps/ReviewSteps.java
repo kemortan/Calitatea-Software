@@ -46,5 +46,6 @@ public class ReviewSteps {
 
     @Then("User is redirected to page with reviews")
     public void userIsRedirectedToPageWithReviews() {
+        driver.findElement(By.id("home")).isDisplayed();
     }
 }

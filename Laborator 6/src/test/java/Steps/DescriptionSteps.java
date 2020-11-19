@@ -38,13 +38,12 @@ public class DescriptionSteps {
     }
 
     @Then("User is redirected to page with description of a product")
-    public void userIsRedirectedToPageWithDescriptionOfAProduct() {
+    public void userIsRedirectedToPageWithDescriptionOfAProduct() throws Exception {
         WebElement big_Wing_Sneakers = driver.findElement(By.cssSelector("div.col-md-8.single-right-left.simpleCart_shelfItem>h3"));
-
-        if (!big_Wing_Sneakers.isDisplayed())
-            driver.close();
-
-        // A page with description of [Big Wing Sneakers] is showing instead of a concrete product
+        if (big_Wing_Sneakers.isDisplayed()) {
+            throw new Exception("A page with description of [Big Wing Sneakers] is showing instead of a concrete product");
+        };
+        driver.close();
 
     }
 }
