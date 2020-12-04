@@ -11,8 +11,3 @@ Feature: Check review functionality
     Examples:
       | name               | email              | message         |
       | Cemortan Vladislav | kemortan@gmail.com | Generic Message |
-
-    #    Given User is on main page
-  #    And User clicks on 'Shop Now' link
-  #    When User hover on a product
-  #    And Click on Quick View button

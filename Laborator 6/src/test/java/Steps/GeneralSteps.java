@@ -23,7 +23,6 @@ public class GeneralSteps
     public void user_enters_in_field(String string, String field)
     {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-//        driver.findElement(By.name(field)).click();
         driver.findElement(By.name(field)).sendKeys(string);
     }
 

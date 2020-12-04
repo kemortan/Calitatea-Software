@@ -8,5 +8,5 @@ Feature: User can Sign In
     Then User is logged in successfully
 
     Examples:
-      | name            | email                     |
-      | Cemortan Vladislav | kemortan@gmail.com|
+      | name               | email              |
+      | Cemortan Vladislav | kemortan@gmail.com |
